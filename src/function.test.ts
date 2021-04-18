@@ -1,4 +1,4 @@
-import { UUID } from './functions'
+import { UUID } from './function'
 
 describe('UUID', () => {
   test('should generate random 12 length by base62', () => {
