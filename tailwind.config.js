@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     colors: {
       transparent: 'transparent',
-      primary: '#092C4C',
+      primary: {
+        normal: '#092C4C',
+        deep: '#041e35',
+      },
       secondary: '#F2994A',
       info: '#2F80ED',
       success: '#27AE60',
@@ -24,6 +27,25 @@ module.exports = {
         500: '#E0E0E0',
         400: '#EDF2F7',
       },
+    },
+    fontSize: {
+      'heading-1': ['56px', '62px'],
+      'heading-2': ['48px', '53px'],
+      'heading-3': ['40px', '44px'],
+      'heading-4': ['32px', '35px'],
+      'heading-5': ['24px', '26px'],
+      'heading-6': ['20px', '22px'],
+      'lg-txt': ['20px', '28px'],
+      'md-txt': ['18px', '25px'],
+      'nm-txt': ['16px', '22px'],
+      'sm-txt': ['14px', '20px'],
+    },
+    fontWeight: {
+      'fb-bold': 700,
+      'fb-regular': 400,
+    },
+    minWidth: {
+      onboardingCard: '28rem',
     },
     extend: {},
   },
