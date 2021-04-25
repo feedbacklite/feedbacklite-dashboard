@@ -1,5 +1,5 @@
 {
-  "name": "feedback-template",
+  "name": "feedbacklite-dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,9 @@
     "@types/react-dom": "^17.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.2.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -47,14 +49,17 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.9",
     "autoprefixer": "9",
-    "postcss": "7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "eslint-config-prettier": "^7.2.0",
     "eslint-config-typescript": "^3.0.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "postcss": "7",
     "prettier": "^2.2.1",
     "stylelint": "^13.12.0",
-    "stylelint-config-standard": "^21.0.0"
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
