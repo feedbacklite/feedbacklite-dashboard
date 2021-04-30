@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 
 const SignUp: React.FC = () => (
-  <div className="flex flex-col items-center">
+  <div className="flex flex-col items-center h-full pt-8 overflow-y-scroll">
     <Card
       title="Get started for free"
       subtitle="Try the widget for free with no time limit or credit card requirement.

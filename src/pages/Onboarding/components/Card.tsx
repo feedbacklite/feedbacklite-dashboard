@@ -5,11 +5,16 @@ interface props {
   title: string
   subtitle?: string
   type: string
+  center?: boolean
 }
 
-const Card: React.FC<props> = ({ title, subtitle, type }) => (
+const Card: React.FC<props> = ({ title, subtitle, type, center }) => (
   <div className="flex flex-col justify-center items-center p-8 border-grey-600 shadow rounded-md max-w-md mt-16 sm:min-w-onboardingCard">
-    <h3 className="text-heading-3 font-fb-bold w-full text-black-700 text-left mb-4">
+    <h3
+      className={`${
+        center ? 'text-center' : 'text-left'
+      } text-heading-3 font-fb-bold w-full text-black-700  mb-4`}
+    >
       {title}
     </h3>
     {subtitle && (

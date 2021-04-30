@@ -8,7 +8,7 @@ interface props {
 
 const Header: React.FC<props> = ({ authenticated }) =>
   !authenticated ? (
-    <nav className="flex justify-between px-12">
+    <nav className="flex justify-between px-24 mb-8 absolute left-0 right-0 top-0">
       <Logo />
       <li className="flex justify-between items-center text-nm-txt font-fb-bold text-grey-700">
         <Link className="mr-4 hover:text-grey-800" to="/help">
