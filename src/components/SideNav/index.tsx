@@ -1,16 +1,35 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import ListItem from './ListItem'
+import { ReactComponent as Back } from '../../assets/Right.svg'
 
 interface props {
   name: string
   list: Array<string>
   colors: { [key: string]: string }
+  active: string
+  setActive: (item: string) => void
+  back?: boolean
 }
 
-const SideNav: React.FC<props> = ({ name, list, colors }) => {
-  const [active, setActive] = useState(list[0])
+const SideNav: React.FC<props> = ({
+  name,
+  list,
+  colors,
+  active,
+  setActive,
+  back,
+}) => {
   return (
-    <nav className="flex flex-col justify-center h-full overflow-y-hidden w-1/5">
+    <nav className="flex flex-col justify-center h-full overflow-y-hidden w-1/5 text-grey-700">
+      {back && (
+        <Link
+          className="flex items-center text-primary-normal text-nm-txt font-fb-regular mb-4"
+          to="/app/lakd"
+        >
+          <Back className="h-5 w-5" /> Back
+        </Link>
+      )}
       <h3 className="my-3 text-md-txt font-fb-bold text-grey-700">
         {name.toUpperCase()}
       </h3>

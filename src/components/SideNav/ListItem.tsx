@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 interface props {
   count?: string
@@ -8,18 +9,6 @@ interface props {
   setActive: (item: string) => void
 }
 
-// interface colors {
-//   [key: string]: string
-// }
-
-// const color: colors = {
-//   all: 'primary-normal',
-//   issue: 'error',
-//   idea: 'warning',
-//   other: 'grey-700',
-//   archive: 'grey-500',
-// }
-
 const ListItem: React.FC<props> = ({
   item,
   count,
@@ -28,22 +17,24 @@ const ListItem: React.FC<props> = ({
   color,
 }) => {
   return (
-    <li
-      onClick={() => setActive(item)}
-      className={`flex items-center justify-between w-full text-md-txt p-1 cursor-pointer rounded-md text-${
-        active === 'archive' ? color.other : ''
-      } bg-${
-        active === item
-          ? `${color[item]} bg-opacity-40 text-${color[item]} font-fb-bold border border-${color[item]}`
-          : ''
-      } hover:bg-${color[item]} hover:bg-opacity-40 my-3`}
-      key={item}
-    >
-      <div className="flex items-center capitalize">
-        <span className={`bg-${color[item]} mx-2 w-2 h-2 rounded-full`}></span>
-        <span className="">{item}</span>
-      </div>
-      {count && <span className="mx-2">{count}</span>}
+    <li>
+      <button
+        onClick={() => setActive(item)}
+        className={`focus:outline-none flex items-center justify-between w-full text-md-txt p-1 cursor-pointer rounded-md fbl-text-${
+          active === 'archive' ? color.other : ''
+        } fbl-li-active-${active === item ? `${color[item]}` : ''} fbl-hover-${
+          color[item]
+        } my-3`}
+        key={item}
+      >
+        <div className="flex items-center capitalize">
+          <span
+            className={`fbl-dot-${color[item]} mx-2 w-2 h-2 rounded-full`}
+          ></span>
+          <span className="">{item}</span>
+        </div>
+        {count && <span className="mx-2">{count}</span>}
+      </button>
     </li>
   )
 }
