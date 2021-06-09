@@ -1,0 +1,18 @@
+.fbl-active {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  transform: scale(1.01);
+  box-shadow: rgb(0 0 0 / 4%) 0px 4px 5px;
+}
+
+.fbl-active .fbl-card-footer {
+  display: flex;
+}
+
+.fbl-active .down-arrow {
+  display: none;
+}
+
+.feed {
+  transition: transform 0.5s ease;
+}

@@ -3,35 +3,35 @@
 }
 
 .fbl-li-active-primary-normal {
-  background-color: rgba(9, 44, 76, 0.4);
+  background-color: rgba(9, 44, 76, 0.1);
   color: #092C4C;
   border: 1px solid #092C4C;
   font-weight: 700;
 }
 
 .fbl-li-active-error {
-  background-color: rgba(235, 87, 87, 0.4);
+  background-color: rgba(235, 87, 87, 0.1);
   color: #EB5757;
   border: 1px solid #EB5757;
   font-weight: 700;
 }
 
 .fbl-li-active-warning {
-  background-color: rgba(226, 185, 59, 0.4);
+  background-color: rgba(226, 185, 59, 0.1);
   color: #E2B93B;
   border: 1px solid #E2B93B;
   font-weight: 700;
 }
 
 .fbl-li-active-grey-700 {
-  background-color: rgba(130, 130, 130, 0.4);
+  background-color: rgba(130, 130, 130, 0.1);
   color: #828282;
   border: 1px solid #828282;
   font-weight: 700;
 }
 
 .fbl-li-active-grey-500 {
-  background-color: rgba(224, 224, 224, 0.4);
+  background-color: rgba(224, 224, 224, 0.2);
   color: #BDBDBD;
   border: 1px solid #BDBDBD;
   font-weight: 700;
@@ -58,21 +58,21 @@
 }
 
 .fbl-hover-primary-normal:hover {
-  background-color: rgba(9, 44, 76, 0.4);
+  background-color: rgba(9, 44, 76, 0.1);
 }
 
 .fbl-hover-error:hover {
-  background-color: rgba(235, 87, 87, 0.4);
+  background-color: rgba(235, 87, 87, 0.1);
 }
 
 .fbl-hover-warning:hover {
-  background-color: rgba(226, 185, 59, 0.4);
+  background-color: rgba(226, 185, 59, 0.1);
 }
 
 .fbl-hover-grey-700:hover {
-  background-color: rgba(130, 130, 130, 0.4);
+  background-color: rgba(130, 130, 130, 0.1);
 }
 
 .fbl-hover-grey-500:hover {
-  background-color: rgba(224, 224, 224, 0.4);
+  background-color: rgba(224, 224, 224, 0.2);
 }
