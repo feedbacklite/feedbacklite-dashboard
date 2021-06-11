@@ -9,7 +9,7 @@ import './App.css'
 
 const App: React.FC = () => {
   return (
-    <div className="h-screen overflow-hidden relative">
+    <div className="h-screen md:overflow-hidden relative">
       <BrowserRouter>
         <Header authenticated={false} />
         <Switch>

@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
 @tailwind base;
-@tailwind components;
+/* @tailwind components; */
 @tailwind utilities;
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

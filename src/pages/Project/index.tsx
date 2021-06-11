@@ -49,10 +49,11 @@ const Project: React.FC = () => {
   const [active, setActive] = useState(sideBarList[0])
 
   return (
-    <div className="flex w-full px-28 h-full">
+    <div className="flex flex-col pt-28 md:pt-0 md:flex-row w-full md:px-28 md:h-full">
+      <h2 className="md:hidden text-heading-2 text-black-700 font-fb-bold text-center mb-6 md:mb-12">Feedback</h2>
       <SideNav active={active} setActive={setActive} name="filters" colors={sideBarColors} list={sideBarList} />
-      <div className="h-full w-4/5 pt-28 pl-28">
-        <h2 className="text-heading-2 text-black-700 font-fb-bold text-center mb-12">Feedback</h2>
+      <div className="w-full md:h-full md:w-4/5 md:pt-28 md:pl-28">
+        <h2 className="hidden md:block text-heading-2 text-black-700 font-fb-bold text-center mb-12">Feedback</h2>
         <div className="fbl-card-area flex flex-col w-full h-4/5 overflow-y-scroll items-center relative pt-3">
           <Card type="issue" id={'1'} active={active} setActive={setActive} />
           <Card type="idea" id={'2'} active={active} setActive={setActive} />
