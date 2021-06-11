@@ -21,7 +21,7 @@ const SideNav: React.FC<props> = ({
   back,
 }) => {
   return (
-    <nav className="flex flex-col justify-center h-full overflow-y-hidden w-1/5 text-grey-700">
+    <nav className="flex flex-col w-full md:pt-0 justify-center md:h-full md:overflow-y-hidden md:w-1/5 text-grey-700 px-8 md:px-0">
       {back && (
         <Link
           className="flex items-center text-primary-normal text-nm-txt font-fb-regular mb-4"
@@ -30,10 +30,10 @@ const SideNav: React.FC<props> = ({
           <Back className="h-5 w-5" /> Back
         </Link>
       )}
-      <h3 className="my-3 text-md-txt font-fb-bold text-grey-700">
+      <h3 className="hidden md:block my-3 text-md-txt font-fb-bold text-grey-700">
         {name.toUpperCase()}
       </h3>
-      <ul className="w-full">
+      <ul className="w-full flex overflow-x-scroll md:block md:overflow-x-hidden">
         {list.map(
           (
             item: string

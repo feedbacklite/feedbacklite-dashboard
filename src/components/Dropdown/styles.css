@@ -1,0 +1,11 @@
+.icon:hover .settings-icon ellipse {
+  stroke: #4F4F4F;
+}
+
+.icon:hover .settings-icon path {
+  stroke: #4F4F4F;
+}
+
+.icon:hover .add-icon path {
+  fill: #4F4F4F;
+}

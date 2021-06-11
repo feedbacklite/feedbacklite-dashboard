@@ -30,29 +30,32 @@ const Card: React.FC<props> = ({ id, type, active, setActive }) => {
         <p className="text-nm-txt text-grey-700 font-fb-regular">1 day ago</p>
       </div>
       <p className="text-black-900 text-nm-txt font-fb-regular mb-8 text-left">
-        Screen is too large when I try to edit
+        Screen is too large when I try to edit Screen is too large when I try to
+        edit Screen is too large when I try to edit
       </p>
       <div className="flex down-arrow">
-        <DownArrow className="ml-auto mr-5" />
+        <DownArrow className="ml-auto" />
       </div>
       <div className="hidden fbl-card-footer">
-        <div className="mr-5">
-          <h4 className="text-sm-txt font-fb-bold text-grey-600 text-left">
-            USER
-          </h4>
-          <p className="text-black-700 text-sm-txt font-fb-regular">
-            aquilaafuadajo@gmail.com
-          </p>
+        <div className="flex flex-col md:flex-row">
+          <div className="mr-5">
+            <h4 className="text-sm-txt font-fb-bold text-grey-600 text-left">
+              USER
+            </h4>
+            <p className="text-black-700 text-sm-txt font-fb-regular">
+              aquilaafuadajo@gmail.com
+            </p>
+          </div>
+          <div className="mr-5 md:mr-0">
+            <h4 className="text-sm-txt font-fb-bold text-grey-600 text-left">
+              USER
+            </h4>
+            <p className="text-black-700 text-sm-txt font-fb-regular">
+              aquilaafuadajo@gmail.com
+            </p>
+          </div>
         </div>
-        <div className="">
-          <h4 className="text-sm-txt font-fb-bold text-grey-600 text-left">
-            USER
-          </h4>
-          <p className="text-black-700 text-sm-txt font-fb-regular">
-            aquilaafuadajo@gmail.com
-          </p>
-        </div>
-        <button className="py-2 px-8 text-grey-700 text-sm-txt font-fb-bold bg-grey-500 rounded-md ml-auto focus:outline-none hover:bg-opacity-40 transition duration-300 ease">
+        <button className="py-2 px-8 text-grey-700 text-sm-txt font-fb-bold bg-grey-500 rounded-md ml-auto focus:outline-none hover:bg-opacity-40 transition duration-300 ease mt-auto">
           Archive
         </button>
       </div>

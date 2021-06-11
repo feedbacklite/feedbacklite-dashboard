@@ -7,7 +7,7 @@ import { sideBarList, sideBarColors } from './config'
 const Settings: React.FC = () => {
   const [active, setActive] = useState(sideBarList[0])
   return (
-    <div className="flex w-full px-28 h-full">
+    <div className="flex flex-col pt-28 md:pt-0 md:flex-row w-full md:px-28 md:h-full">
       <SideNav
         active={active}
         setActive={setActive}
@@ -16,8 +16,8 @@ const Settings: React.FC = () => {
         list={sideBarList}
         back
       />
-      <div className="h-full w-4/5 pt-28 pl-28">
-        <h2 className="text-heading-2 text-black-700 font-fb-bold text-center mb-12">
+      <div className="w-full px-5 md:px-0 mt-8 md:mt-0 md:h-full md:w-4/5 md:pt-28 md:pl-28">
+        <h2 className="hidden md:block text-heading-2 text-black-700 font-fb-bold text-center mb-12">
           Settings
         </h2>
         <div className="flex flex-col w-full">
